@@ -6,15 +6,29 @@
     <style>
       body {
           background: black;
+          color: white;
+          font-family: 'Special Elite', cursive;
+          margin: 0;
       }
-      main {
-          max-width: 1280px;
-          margin: 66px auto;
+      section {
+          max-width: 100%;
+      }
+      .inner {
+          max-width: 666px;
+          margin: 0 auto;
+          padding-top: 20px;
+          padding-bottom: 20px;
       }
       img {
           border-radius: 66px;
           display: block;
           max-width: 100%;
+      }
+      h2 {
+          font-size: 60px;
+      }
+      .about, .tour  {
+          background: darkgrey;
       }
     </style>
 
@@ -29,6 +43,11 @@
     <meta property="og:image" content="https://autorotor.rocks/img.jpg" />
     <meta property="og:url" content="https://autorotor.rocks" />
     <meta property="og:description" content="autorotor is a rock band from Stockholm, Sweden." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     
   </head>
   <body>
@@ -36,6 +55,48 @@
       <header>
         <img src="img.jpg" alt="autorotor band picture"/>
       </header>
+      <section class="about">
+        <div class="inner">
+          <h2>About</h2>
+          <p>
+            Autorotor was formed in Stockholm during the pandemic. It rose from the cover band Deep Legacy
+            after it turned out that it was even more fun to play own tunes as compared to the legacy of
+            Whitesnake and Purple. Most of the song writing happened in the studio in Sharpnude where the
+            band rehearsed for a couple of years. To get even more creative energy it was decided to move on
+            to Longbridge - an old mental illness asylum - that certainly have the right vibes for some
+            serious rock and roll.
+          </p>
+          <p>
+            Current members:
+            <ul>
+              <li>Song - Martin Andersson</li>
+              <li>Guitar - Steeve Führ</li>
+              <li>Drums - Johan Moquist</li>
+              <li>Bass - Johan Kejlert</li>
+              <li>Keys - Fredik Rubensson</li>
+            </ul>
+          </p>
+        </div>
+      </section>
+      <section class="music">
+        <div class="inner">
+          <h2>Music</h2>
+          <h3>Bring On the Action - 2021 (EP)</h3>
+          <ul>
+            <li>Bring On The Action</li>
+            <li>You Are You</li>
+            <li>One In A Million</li>
+          </ul>
+        </div>
+      </section>
+      <section class="tour">
+        <div class="inner">
+          <h2>Tour dates</h2>
+          <ul>
+            <li>2021.08.27 - Nyköping Rockfestival</li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
