@@ -15,7 +15,7 @@
           font-family: 'Special Elite', emoji;
           margin: 0;
       }
-      section {
+      section, nav, header {
           max-width: 100%;
       }
       .inner {
@@ -23,6 +23,9 @@
           margin: 0 auto;
           padding-top: 20px;
           padding-bottom: 20px;
+      }
+      .centrify {
+          text-align: center;
       }
       img {
           border-radius: 66px;
@@ -37,6 +40,10 @@
       }
       ul {
           list-style-type: '» ';
+      }
+      a {
+          color: #799;
+          font-size: 23px;
       }
     </style>
 
@@ -54,11 +61,17 @@
   </head>
   <body>
     <main>
+      <nav
+        <div class="inner centrify">
+          <a href="#about">about</a> | <a href="#music">music</a> | <a href="#tour">tour</a>
+        </div>
+      </nav>
       <header>
         <img class="inner" src="img.jpg" alt="autorotor band picture"/>
       </header>
       <section class="about">
         <div class="inner">
+          <a id="about" ></a>
           <h2>About</h2>
           <p>
             Autorotor was formed in Stockholm during the pandemic. It rose from the cover band Deep Legacy
@@ -82,6 +95,7 @@
       </section>
       <section class="music">
         <div class="inner">
+          <a id="music" ></a>
           <h2>Music</h2>
           <h3>Bring On the Action — 2021 (EP)</h3>
           <ul>
@@ -93,6 +107,7 @@
       </section>
       <section class="tour">
         <div class="inner">
+          <a id="tour" ></a>
           <h2>Tour dates</h2>
           <ul>
             <li>2021.08.27 — Nyköping Rockfestival</li>
