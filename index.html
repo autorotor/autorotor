@@ -21,15 +21,15 @@
       .inner {
           max-width: 666px;
           margin: 0 auto;
-          padding-top: 20px;
-          padding-bottom: 20px;
+          padding: 10px;
       }
       .centrify {
           text-align: center;
       }
-      img {
-          border-radius: 66px;
+      .logo {
           display: block;
+          border-radius: 10px;
+          max-width: 100%;
       }
       h2 {
           font-size: 42px;
@@ -56,6 +56,9 @@
           height: 166px;
           background: linear-gradient(#010,66%,#bbb);
       }
+      .social img {
+          height: 33px;
+      }
       
     </style>
 
@@ -73,13 +76,21 @@
   </head>
   <body>
     <main>
-      <nav
+      <nav>
         <div class="inner centrify">
           <a href="#news">news</a> | <a href="#about">about</a> | <a href="#music">music</a> | <a href="#tour">tour</a>
         </div>
       </nav>
+      <nav class="social">
+        <div class="inner centrify">
+          <a href="https://www.facebook.com/autorotor.rocks/"><img src="f.png" /></a>
+          <a href="https://www.instagram.com/autorotor.band/"><img src="i.png" /></a>
+        </div>
+      </nav>
       <header>
-        <img class="inner" src="img.jpg" alt="autorotor band picture"/>
+        <div class="inner">
+          <img class="logo" src="img.jpg" alt="autorotor band picture"/>
+        </div>
       </header>
       <div class="othermezzo"></div>
       <section class="news">
